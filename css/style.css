@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto-Slab|Roboto" rel="stylesheet');
+
+@import url('https://use.fontawesome.com/releases/v5.0.1/css/all.css');
+
+* {
+    box-sizing: border-box;
+    outline:none;
+}
+
+html {
+    font-size: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+h1, h2 {
+    font-family: "Roboto Slab", serif;
+}
+
+h3, p {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+    line-height: 1.125em;
+}
+
+h3 {
+    font-size: 1.125em;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 100%;
+    padding: 2em;
+    background: linear-gradient(0deg, rgb(45, 45, 45), rgb(100, 100, 100));
+    display: flex;
+    flex-direction: column;
+}
+
+.headshot {
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar h1, p, .sidebar ul li {
+    color: rgb(200, 200, 200);
+}
+
+.sidebar h2, h3 {
+    color: grey;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+.sidebar ul:last-of-type {
+    margin-bottom: 0;
+}
+
+.sidebar ul > li > ul,
+ul > li > ul > li {
+    display: inline-block;
+    line-height: 1.25em;
+}
+
+.sidebar ul > li > ul {
+    width: 100%;
+}
+
+.sidebar ul > li > ul > li::after {
+    content: ', ';
+}
+
+.sidebar ul > li > ul > li:last-of-type::after {
+    content: '';
+}
+
+.resume {
+    width: 100%;
+    padding: 1.5em;
+}
+
+.resume-icon {
+    display: inline;
+    margin-right: 0.5em;
+    max-width: 4em;
+}
+
+.resume-icon + h1 {
+    display: inline;
+}
+
+.resume h3 {
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+.experience, .education {
+    margin-bottom: 3em;
+}
+
+.experience ul li,
+.skills ul li {
+    line-height: 1.5em;
+}
+
+.education p {
+    color: black;   
+}
+
+.experience ul {
+    padding-left: 2em;
+}
+
+
+
+
+
+@media only screen and (min-device-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: auto;
+        max-width: 30%;
+    }
+
+    .headshot {
+        max-width: 70%;
+    }
+
+    .sidebar h1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .sidebar h2 {
+        font-size: 1em;
+    }
+
+    .sidebar p,
+    .sidebar ul > li {
+        font-size: 0.9em;
+    }
+
+    .sidebar > ul > li > ul > li {
+        font-size: 1em;
+    }
+
+    .sidebar > ul > li:last-of-type > ul {
+        margin-bottom: 0;
+    }
+
+    .sidebar hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .resume {
+        width: auto;
+        max-width: 60%;
+        margin-left: 2em;
+        padding: 1em;
+        margin-top: 3em;
+    }
+
+    .resume-section {
+        margin-left: 3.5em;
+    }
+
+    .skills ul {
+        column-count: 2;
+        padding-left: 2em;
+        column-gap: 2.5em;
+    }
+}
